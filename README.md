@@ -1,6 +1,8 @@
 # project-four-testing-ovarian-cancer
 
-Clean data to start the project is ./Resources/PeterMac_HRD_Validation.csv
+Clean data to start the project is [./Resources/PeterMac_HRD_Validation.csv](Resources/PeterMac_HRD_Validation.csv)
+
+This is the validation data that shows the SOPHiA Genetics assay performed accurately compared to the Myriad Genetics assay.
 
 Column Descriptions:
 
@@ -43,3 +45,5 @@ Column Descriptions:
 [Link](https://www.biorxiv.org/content/biorxiv/early/2022/07/08/2022.07.06.498851.full.pdf) to preprint describing training of the SOPHiA Genetics CNN algorithm.
 
 [Genomic Integrity Report](HRD_202305051913-21752-0072-GI-Report.pdf) - contains useful information.
+
+[LICENSE](LICENSE)
