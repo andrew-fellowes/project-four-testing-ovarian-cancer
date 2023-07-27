@@ -38,3 +38,8 @@ Column Descriptions:
 | MyriadGIStatus | 1 = HRD Positive 2 = HRD Negative |
 | SOPHiAGIIndex | The Genomic Instability Index for the method being validated - the SOPHiA Genetics HRD assay. Range form -20 to 20, a value greater than 0 corresponds to genomically unstable |
 | SophiaGIStatus | 1 = HRD Positive, 2 = HRD Negative, 3 = Inconclusive, 4 = Rejected |
+
+
+[Link](https://www.biorxiv.org/content/biorxiv/early/2022/07/08/2022.07.06.498851.full.pdf) to preprint describing training of the SOPHiA Genetics CNN algorithm.
+
+[Genomic Integrity Report](HRD_202305051913-21752-0072-GI-Report.pdf) - contains useful information.
