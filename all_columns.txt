@@ -1,0 +1,63 @@
+Run_x
+Episode#_x
+DDM Sample ID
+MID-S
+MonthsOld
+Source_x
+WGS (M)_x
+Panel (M)_x
+Res Noise
+SOPHiA_QA_status
+Purity
+OvCa I/II HRR
+Deep_x
+OvCa BRCAm_status
+SOPHiA_GI_status
+SOPHiA_GI_index
+Myriad_GI_score_x
+Myriad_GI_Status
+Run_y
+Episode#_y
+Replicate_x
+Tumour_x
+SeqRunID_x
+MID S_x
+Total (M)
+WGS (M)_y
+Panel (M)_y
+% WGS
+% Panel
+Purity:Ploidy
+Resid Noise
+SNR
+QA Status
+GI Status
+Low Cov Regions
+Dup fraction
+25x
+50x
+100x
+200x
+500x
+1000x
+Run
+Episode#
+Location#
+Replicate_y
+SeqRunID_y
+MID S_y
+Tumour_y
+Source_y
+External ID
+Purity(%)
+Input (ng)
+Panel (M)
+200x coverage
+Myriad_GI_score_y
+Detected Gene
+Detected Variant
+Detected VAF (%)
+Deep_y
+Known gene
+Known variant
+Known VAF

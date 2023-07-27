@@ -1,0 +1,32 @@
+Run
+Episode#
+Source_x
+MonthsOld
+Purity
+SeqRunID_x
+DDM Sample ID
+MID-S
+Total (M)
+WGS (M)_x
+Panel (M)
+% WGS
+% Panel
+1000x
+500x
+200x
+100x
+50x
+25x
+Dup fraction
+Low Cov Regions
+Purity:Ploidy
+Res Noise
+SNR
+QA Status
+Detected Gene
+Detected Variant
+Detected VAF (%)
+Myriad_GI_score_x
+Myriad_GI_Status
+SOPHiA_GI_index
+SOPHiA_GI_status
