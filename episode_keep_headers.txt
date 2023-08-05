@@ -1,0 +1,10 @@
+Episode
+Run
+MIDS
+State/Territory
+Collected
+Received
+Est Tum Purity
+Gene_1
+HGVSp_1
+VAF_1
