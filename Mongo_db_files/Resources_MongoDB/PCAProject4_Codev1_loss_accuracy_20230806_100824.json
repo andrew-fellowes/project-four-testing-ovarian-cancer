@@ -1,0 +1,14 @@
+[
+    {
+        "Metric": "Loss",
+        "Value": "0.6005326509475708"
+    },
+    {
+        "Metric": "Accuracy",
+        "Value": "0.75"
+    },
+    {
+        "Metric": "Date",
+        "Value": "20230806_100824"
+    }
+]
