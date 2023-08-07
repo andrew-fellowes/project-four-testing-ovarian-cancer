@@ -1,0 +1,43 @@
+Episode
+Run
+MIDS
+State/Territory
+Collected
+Received
+Est Tum Purity
+DNA Conc
+Failed or Cancelled_1
+Reason_1
+Tissue Collection
+Previous Chemo
+CRS
+HRD Status
+GI Index
+GI Status
+BRCA Status
+Gene_1
+HGVSc_1
+HGVSp_1
+Reportable_1
+Tier_1
+VAF_1
+Gene_2
+HGVSc_2
+HGVSp_2
+Reportable_2
+Tier_2
+VAF_2
+Gene_3
+HGVSc_3
+HGVSp_3
+Reportable_3
+Tier_3
+VAF_3
+Gene_4
+HGVSc_4
+HGVSp_4
+Reportable_4
+Tier_4
+VAF_4
+Ext Lab
+Run_ID

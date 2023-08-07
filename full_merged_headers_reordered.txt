@@ -1,0 +1,29 @@
+Run
+Episode
+State/Territory
+DaysOld
+Est Tum Purity
+Sample
+MIDS
+Total(M)
+WGS(M)
+Panel(M)
+%WGS
+%Panel
+1000x
+500x
+200x
+100x
+50x
+25x
+Duplicate Fraction
+LCR
+PPR
+RN
+SNR
+QAStatus
+Gene_1
+HGVSp_1
+VAF_1
+GI_index
+GI_status

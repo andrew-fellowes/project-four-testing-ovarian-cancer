@@ -1,0 +1,252 @@
+Episode,State/Territory,Collected,Received,Est Tum Purity,DNA Conc,Failed or Cancelled_1,Reason_1,Tissue Collection,Previous Chemo,CRS,HRD Status,GI Index,GI Status,BRCA Status,Gene_1,HGVSc_1,HGVSp_1,Reportable_1,Tier_1,VAF_1,Gene_2,HGVSc_2,HGVSp_2,Reportable_2,Tier_2,VAF_2,Gene_3,HGVSc_3,HGVSp_3,Reportable_3,Tier_3,VAF_3,Gene_4,HGVSc_4,HGVSp_4,Reportable_4,Tier_4,VAF_4,Ext Lab,Run_ID
+1404-5736,QLD,4/5/2023,11/5/2023,50,7.17,,,Core Biopsy,No,,NEGATIVE,-3.5,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.614A>G,p.(Tyr205Cys),,IA,48,,,,,,,,,,,,,,,,,,,PATH QLD,HRD_Run1
+1407-6535,NSW,26/5/2023,26/5/2023,70,140,,,Cytology,Unknown,,NEGATIVE,-6,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.421_453del,p.(Cys141_Pro151del),,IB,82,CCNE1,Gene amplification copy number 5.5,p.(=),,IIC,-,,,,,,,,,,,,,CAPITAL PATH,HRD_Run1
+1407-6825,VIC,9/5/2023,25/5/2023,45,5.47,Yes,Pre-capture library QC,Resection,Yes,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PP,HRD_Run1
+1407-7230,VIC,26/5/2023,26/5/2023,55,44,,,Resection,Unknown,,POSITIVE,11.5,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.586C>T,p.(Arg196*),,IB,47,,,,,,,,,,,,,,,,,,,RMH,HRD_Run1
+1407-7320,VIC,29/5/2023,29/5/2023,35,10.5,,,Resection,Yes,2,NEGATIVE,-6.5,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.818G>A,p.(Arg273His),,IB,24,,,,,,,,,,,,,,,,,,,RCH,HRD_Run1
+1407-7410,VIC,26/5/2023,26/5/2023,80,38.7,,,Resection,No,,POSITIVE,4.7,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.560-1G>A,p.(?),,IB,77,,,,,,,,,,,,,,,,,,,RCH,HRD_Run1
+1407-7973,VIC,26/5/2023,26/5/2023,60,75.6,,,Cytology,No,,POSITIVE,-2.5,NEGATIVE,POSITIVE,BRCA2,NM_000059.3:c.3263del,p.(Pro1088Leufs*16),Yes,IA,62,,,,,,,,,,,,,,,,,,,PP,HRD_Run1
+1408-2692,VIC,20/4/2023,1/6/2023,90,212,,,Resection,Unknown,,NEGATIVE,-18.8,NEGATIVE,NEGATIVE,,,,,,,,,,,,,,,,,,,,,,,,,RCH/RWH,HRD_Run1
+1409-5564,TAS,13/4/2023,30/5/2023,25,12.2,,,Resection,No,,NEGATIVE,-13.1,NEGATIVE,NEGATIVE,,,,,,,,,,,,,,,,,,,,,,,,,RHH,HRD_Run1
+1409-6173,QLD,19/5/2023,30/5/2023,80,38.1,,,Core Biopsy,Unknown,,NEGATIVE,-10.6,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.512_517dup,p.(Glu171_Val172dup),,IB,55,CCNE1,Gene amplification copy number 12.6,p.(=),,IIC,-,,,,,,,,,,,,,QML,HRD_Run1
+1409-8278,VIC,23/5/2023,15/6/2023,45,8.02,,,Core Biopsy,No,,NEGATIVE,-3.4,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.358A>G,p.(Lys120Glu),,IB,50,,,,,,,,,,,,,,,,,,,EASTERN HEALTH PATH,HRD_Run1
+1410-1517,TAS,23/5/2023,31/5/2023,90,233,,,Resection,No,,POSITIVE,8.8,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.464_491del,p.(Thr155Serfs*6),,IB,92,,,,,,,,,,,,,,,,,,,RHH,HRD_Run1
+1410-3300,TAS,15/5/2023,1/6/2023,90,35.2,,,Cytology,No,,POSITIVE,0.8,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.473_477del,p.(Arg158Hisfs*21),,IB,79,,,,,,,,,,,,,,,,,,,RHH,HRD_Run1
+1410-5640,NSW,31/5/2023,14/6/2023,50,19.9,,,Core Biopsy,Unknown,,POSITIVE,13.4,POSITIVE,POSITIVE,BRCA1,NM_007294.3:c.3331_3334del,p.(Gln1111Asnfs*5),Yes,IA,59,TP53,NM_000546.5:c.1024C>T,p.(Arg342*),,IB,43,,,,,,,,,,,,,PATH QLD,HRD_Run1
+1411-3334,TAS,7/6/2023,8/6/2023,15,55.5,Yes,Other (see comments),Cytology,Unknown,,,,INCONCLUSIVE,,TP53,NM_000546.5:c.524G>A,p.(Arg175His),,IB,3,,,,,,,,,,,,,,,,,,,LGH,HRD_Run1
+1411-6796,NSW,24/5/2023,13/6/2023,55,12.6,,,Core Biopsy,Unknown,,POSITIVE,11,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.584T>C,p.(Ile195Thr),,IB,34,,,,,,,,,,,,,,,,,,,IML PATH,HRD_Run1
+1411-8619,VIC,31/5/2023,5/6/2023,70,21.2,,,Core Biopsy,Unknown,,NEGATIVE,-10.1,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.524G>A,p.(Arg175His),,IA,46,,,,,,,,,,,,,,,,,,,ACL,HRD_Run1
+1411-9447,VIC,6/6/2023,7/6/2023,60,5.5,,,Resection,Unknown,,POSITIVE,1.3,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.377A>G,p.(Tyr126Cys),,IB,17,,,,,,,,,,,,,,,,,,,DOREVITCH PATH,HRD_Run1
+1413-3282,QLD,8/6/2023,9/6/2023,80,48.6,,,Core Biopsy,Yes,Unknown,,18.8,POSITIVE,POSITIVE,BRCA2,NM_000059.3:c.7558C>T,p.(Arg2520*),Yes,IA,19,BRCA2,NM_000059.3:c.7558_7559delinsTC,p.(Arg2520Ser),Yes,IA,35,BRCA2,NM_000059.3:c.7558_7559delinsTT,p.(Arg2520Leu),Yes,III,20,TP53,NM_000546.5:c.833C>G,p.(Pro278Arg),,IB,73,MATER PATH,HRD_Run1
+1413-3340,QLD,1/6/2023,9/6/2023,25,3.86,,,Core Biopsy,No,,POSITIVE,9.2,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.584T>C,p.(Ile195Thr),,IB,16,,,,,,,,,,,,,,,,,,,MATER,HRD_Run1
+1413-4688,VIC,7/6/2023,20/6/2023,70,92.6,,,Resection,No,,POSITIVE,10.2,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.713G>T,p.(Cys238Phe),,IB,61,,,,,,,,,,,,,,,,,,,RCH,HRD_Run1
+1413-4758,VIC,31/5/2023,10/7/2023,80,170,,,Core Biopsy,No,,POSITIVE,13,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.592G>T,p.(Glu198*),,IB,79,,,,,,,,,,,,,,,,,,,TISSUPATH,HRD_Run4
+1413-7339,QLD,6/6/2023,14/6/2023,70,189,,,Core Biopsy,No,,POSITIVE,4,POSITIVE,POSITIVE,BRCA1,NM_007294.3:c.2560_2561dup,p.(Gln855Leufs*39),Yes,IA,80,TP53,NM_000546.5:c.490A>G,p.(Lys164Glu),,III,63,,,,,,,,,,,,,MATER PATH,HRD_Run1
+1414-1378,SA,31/5/2023,15/6/2023,25,6.21,,,Core Biopsy,No,,POSITIVE,3.9,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.497C>G,p.(Ser166*),,IB,33,,,,,,,,,,,,,,,,,,,SA PATH,HRD_Run1
+1414-3904,NSW,5/6/2023,26/6/2023,30,1.17,,,Core Biopsy,Unknown,,NEGATIVE,-7.3,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.708_713del,p.(Met237_Cys238del),,IB,48,,,,,,,,,,,,,,,,,,,NSW PATH,HRD_Run2
+1414-3922,NSW,12/6/2023,22/6/2023,70,96.9,,,Resection,Unknown,,POSITIVE,14.2,POSITIVE,POSITIVE,BRCA1,NM_007294.3:c.2766del,p.(Val923Leufs*77),Yes,IA,75,TP53,NM_000546.5:c.584T>C,p.(Ile195Thr),,IB,54,,,,,,,,,,,,,LPQ,HRD_Run2
+1414-9489,SA,16/5/2023,27/6/2023,30,6.08,,,Resection,Unknown,,NEGATIVE,-2.9,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.523C>G,p.(Arg175Gly),,IB,54,,,,,,,,,,,,,,,,,,,SA PATHOLOGY,HRD_Run2
+1415-0071,VIC,19/6/2023,20/6/2023,70,21.6,,,Cytology,Unknown,,NEGATIVE,-5.6,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.713G>A,p.(Cys238Tyr),,IB,89,,,,,,,,,,,,,,,,,,,ACL,HRD_Run2
+1415-3925,VIC,28/3/2023,20/6/2023,60,24.9,,,Core Biopsy,Unknown,,POSITIVE,7.1,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.641A>G,p.(His214Arg),,IB,78,,,,,,,,,,,,,,,,,,,,HRD_Run2
+1415-3976,ACT,1/5/2023,30/6/2023,60,89.2,,,Resection,Yes,2,NEGATIVE,-9.2,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.518T>A,p.(Val173Glu),,IB,63,,,,,,,,,,,,,,,,,,,NSW GOV HLTH PATH,HRD_Run3
+1415-4079,NSW,20/6/2023,20/6/2023,20,10.5,,,Resection,No,,NEGATIVE,-13.9,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.916C>T,p.(Arg306*),,IB,37,,,,,,,,,,,,,,,,,,,NSW HEALTH PATH,HRD_Run2
+1415-4176,NSW,10/1/2023,29/6/2023,60,125,,,Core Biopsy,Unknown,,POSITIVE,7.2,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.745A>G,p.(Arg249Gly),,IB,29,,,,,,,,,,,,,,,,,,,RPAH,HRD_Run3
+1415-6449,NT,22/6/2023,23/6/2023,70,192,,,Resection,No,,NEGATIVE,-11.3,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.584T>C,p.(Ile195Thr),,IB,72,,,,,,,,,,,,,,,,,,,ROYAL DARWIN HOSP,HRD_Run2
+1415-6680,NSW,8/9/2022,26/6/2023,70,1.49,,,Core Biopsy,No,,NEGATIVE,-1.4,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.258del,p.(Pro87Glnfs*36),,IB,51,,,,,,,,,,,,,,,,,,,RPAH,HRD_Run2
+1415-7282,SA,8/6/2023,20/6/2023,60,28.4,,,Core Biopsy,No,,POSITIVE,6.9,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.742C>T,p.(Arg248Trp),,IB,56,,,,,,,,,,,,,,,,,,,SA PATH,HRD_Run2
+1415-7294,QLD,8/6/2023,29/6/2023,20,85.9,,,Core Biopsy,Unknown,,NEGATIVE,-13.5,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.691_732dup,p.(Thr231_Gly244dup),,IB,12,,,,,,,,,,,,,,,,,,,SNP,HRD_Run3
+1415-7399,NSW,2/3/2023,3/7/2023,,,Yes,Pathology Review,Resection,Yes,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SEAL,
+1415-7464,VIC,26/6/2023,26/6/2023,5,,Yes,Pathology Review,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,ROYAL CHILDRENS,HRD_Run1
+1415-7825,QLD,27/2/2023,29/6/2023,30,35.4,,,Resection,Yes,1,NEGATIVE,-6.7,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.159G>A,p.(Trp53*),,IB,31,,,,,,,,,,,,,,,,,,,SNP,HRD_Run2
+1415-9836,NSW,10/3/2023,29/6/2023,20,3.97,,,Resection,Yes,2,NEGATIVE,-9.6,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.517G>A,p.(Val173Met),,IB,20,,,,,,,,,,,,,,,,,,,NSW GOV HLTH PATH,HRD_Run3
+1415-9858,VIC,14/6/2023,22/6/2023,50,20.6,,,Core Biopsy,No,,NEGATIVE,-9.6,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.818G>A,p.(Arg273His),,IB,85,,,,,,,,,,,,,,,,,,,PMCC,HRD_Run2
+1415-9878,NSW,5/5/2023,22/6/2023,20,3.31,,,Resection,Yes,1,NEGATIVE,-9.2,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.659A>G,p.(Tyr220Cys),,IB,11,,,,,,,,,,,,,,,,,,,NSW GOV HLTH PATH,HRD_Run3
+1415-9956,NSW,21/3/2023,7/7/2023,30,1.93,,,Core Biopsy,No,Unknown,NEGATIVE,-9.1,NEGATIVE,,gene:TP53,NM_000546.5:c.373A>C,p.(Thr125Pro),,III,34,,,,,,,,,,,,,,,,,,,RPAH,HRD_Run4
+1416-0090,QLD,6/6/2023,22/6/2023,25,71.3,,,Resection,Yes,2,NEGATIVE,-4.8,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.254del,p.(Pro85Leufs*38),,IB,34,,,,,,,,,,,,,,,,,,,MATER,HRD_Run2
+1416-0173,QLD,8/6/2023,22/6/2023,25,2.96,,,Core Biopsy,Unknown,,NEGATIVE,-10.9,NEGATIVE,NEGATIVE,,,,,,,,,,,,,,,,,,,,,,,,,MATER,HRD_Run2
+1416-0397,QLD,5/6/2023,29/6/2023,60,93.2,,,Core Biopsy,No,,POSITIVE,0.9,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.997del,p.(Arg333Valfs*12),,IB,84,,,,,,,,,,,,,,,,,,,SNP,HRD_Run3
+1416-0442,VIC,30/5/2023,6/7/2023,55,98.8,,,Resection,Yes,2,NEGATIVE,-7.8,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.743G>A,p.(Arg248Gln),,IB,56,,,,,,,,,,,,,,,,,,,DOREVITCH,HRD_Run4
+1416-0873,QLD,21/6/2023,22/6/2023,30,13.6,,,Core Biopsy,No,,NEGATIVE,-8.6,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.528C>G,p.(Cys176Trp),,III,50,,,,,,,,,,,,,,,,,,,MATER,HRD_Run2
+1416-2874,NSW,3/2/2023,29/6/2023,30,3.11,,,Core Biopsy,No,,NEGATIVE,-9.5,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.524G>A,p.(Arg175His),,,36,,,,,,,,,,,,,,,,,,,NSW HLTH PATH,HRD_Run3
+1416-3001,QLD,8/5/2023,3/7/2023,80,55.3,,,Resection,Yes,1,NEGATIVE,-7.4,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.528C>G,p.(Cys176Trp),,IB,60,,,,,,,,,,,,,,,,,,,SNP,HRD_Run3
+1416-3035,VIC,16/6/2023,23/6/2023,30,5.16,,,Core Biopsy,No,,NEGATIVE,-3.1,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.727_732del,p.(Met243_Gly244del),,IB,80,,,,,,,,,,,,,,,,,,,MELB PATH,HRD_Run2
+1416-3169,TAS,30/5/2023,23/6/2023,10,15.8,,,Resection,Yes,1,POSITIVE,6.7,POSITIVE,POSITIVE,BRCA2,NM_000059.3:c.9302T>C,p.(Leu3101Pro),Yes,IA,59,TP53,NM_000546.5:c.818G>A,p.(Arg273His),,IB,14,,,,,,,,,,,,,ROYAL HOBART HOSP,HRD_Run2
+1416-3368,NSW,29/6/2023,30/6/2023,85,11.1,,,Core Biopsy,No,,POSITIVE,16.1,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.402T>G,p.(Phe134Leu),,IB,79,,,,,,,,,,,,,,,,,,,NSW GOV HLTH PATH,HRD_Run3
+1416-8447,NSW,28/6/2023,29/6/2023,40,164,,,Resection,No,,POSITIVE,9.7,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.517G>A,p.(Val173Met),,IB,75,,,,,,,,,,,,,,,,,,,RPAH,HRD_Run2
+1416-8464,NSW,18/4/2023,30/6/2023,90,363,,,Resection,No,,POSITIVE,-0.4,NEGATIVE,POSITIVE,BRCA1,NM_007294.3:c.1961dup,p.(Tyr655Valfs*18),Yes,IA,82,TP53,NM_000546.5:c.916C>T,p.(Arg306*),,IB,79,,,,,,,,,,,,,NSW GOV HLTH PATH,HRD_Run3
+1416-8934,VIC,28/3/2023,28/6/2023,10,2.83,,,Resection,Yes,3,NEGATIVE,,INCONCLUSIVE,NEGATIVE,,,,,,,,,,,,,,,,,,,,,,,,,MONASH,HRD_Run2
+1417-0131,NSW,29/6/2023,29/6/2023,10,5.81,,,Resection,Unknown,,NEGATIVE,0,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.857A>C,p.(Glu286Ala),,IB,38,,,,,,,,,,,,,,,,,,,NSW GOV HLTH PATH,HRD_Run3
+1417-1986,NSW,13/4/2023,29/6/2023,65,256,,,Resection,Yes,2,POSITIVE,1.9,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.723del,p.(Cys242Alafs*5),,IB,67,,,,,,,,,,,,,,,,,,,NSW GOV HLTH PATH,HRD_Run3
+1417-2390,VIC,31/5/2023,29/6/2023,70,19.8,,,Core Biopsy,Unknown,,NEGATIVE,-8.5,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.637C>T,p.(Arg213*),,IB,75,,,,,,,,,,,,,,,,,,,ACL,HRD_Run3
+1417-2818,QLD,27/6/2023,27/6/2023,,,Yes,Cancelled,Resection,Yes,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,HRD_Run1
+1417-4871,VIC,25/6/2023,28/6/2023,70,14.2,,,Core Biopsy,No,,NEGATIVE,-11.4,NEGATIVE,NEGATIVE,,,,,,,,,,,,,,,,,,,,,,,,,PMCC,HRD_Run2
+1417-5112,NT,26/5/2023,28/6/2023,,4.57,Yes,Cancelled,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NT GOV PATH SER,
+1417-5682,TAS,21/6/2023,28/6/2023,40,55.4,,,Resection,Unknown,,POSITIVE,0.8,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.854_884delinsCG,p.(Glu285Alafs*11),,IB,78,,,,,,,,,,,,,,,,,,,RHH,HRD_Run2
+1417-5712,QLD,21/6/2023,3/7/2023,35,8.21,,,Core Biopsy,No,,NEGATIVE,-6.5,NEGATIVE,NEGATIVE,BRCA2,NM_000059.3:c.5487G>T,p.(Leu1829Phe),,III,40,TP53,NM_000546.5:c.722C>A,p.(Ser241Tyr),,IB,35,,,,,,,,,,,,,SNP,HRD_Run3
+1417-5864,VIC,27/3/2023,11/7/2023,50,6.86,,,Core Biopsy,No,,POSITIVE,7,POSITIVE,POSITIVE,BRCA1,NM_007294.3:c.4358-2A>G,p.(?),Yes,IA,76,TP53,NM_000546.5:c.527G>A,p.(Cys176Tyr),,IB,66,,,,,,,,,,,,,RCH/RWH,HRD_Run4
+1417-6092,NSW,28/6/2023,28/6/2023,,0.92,Yes,Extraction QC,Cytology,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,JHH,
+1417-8744,VIC,2/7/2023,3/7/2023,40,10.8,,,Core Biopsy,No,,POSITIVE,6.4,POSITIVE,POSITIVE,BRCA1,NM_007294.3:c.5268_5271del,p.(Asp1757Glufs*7),Yes,IA,60,TP53,NM_000546.5:c.701A>G,p.(Tyr234Cys),,IB,28,,,,,,,,,,,,,AUSTIN,HRD_Run3
+1417-8835,QLD,21/4/2023,3/7/2023,75,106,,,Resection,Yes,1,NEGATIVE,-10.7,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.800G>C,p.(Arg267Pro),,IB,86,,,,,,,,,,,,,,,,,,,SNP,HRD_Run3
+1417-9201,NSW,29/6/2023,29/6/2023,70,6.82,,,Core Biopsy,No,,POSITIVE,7.2,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.524G>A,p.(Arg175His),,IB,87,,,,,,,,,,,,,,,,,,,WESTMEAD,HRD_Run2
+1417-9625,NSW,22/6/2023,29/6/2023,80,16.3,,,Core Biopsy,Unknown,,NEGATIVE,-7.2,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.659A>G,p.(Tyr220Cys),,IB,87,,,,,,,,,,,,,,,,,,,ROYAL PRINCE ALFRED,HRD_Run3
+1417-9682,NSW,5/6/2023,6/7/2023,55,60.6,,,Core Biopsy,No,,NEGATIVE,-12.6,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.856del,p.(Glu286Lysfs*59),,IB,50,,,,,,,,,,,,,,,,,,,DHM PATH,HRD_Run3
+1417-9722,NSW,4/7/2023,5/7/2023,80,43.7,,,Cytology,Unknown,,NEGATIVE,-8.9,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.818G>A,p.(Arg273His),,IB,70,,,,,,,,,,,,,,,,,,,PP,HRD_Run3
+1417-9743,NSW,21/6/2023,5/7/2023,25,2.64,,,Core Biopsy,Unknown,,NEGATIVE,-10.2,NEGATIVE,NEGATIVE,,,,,,,,,,,,,,,,,,,,,,,,,PP,HRD_Run3
+1417-9764,QLD,29/6/2023,29/6/2023,20,52.1,,,Cytology,Unknown,,NEGATIVE,-4.1,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.659A>G,p.(Tyr220Cys),,IB,47,,,,,,,,,,,,,,,,,,,,HRD_Run2
+1418-1823,VIC,26/4/2023,28/6/2023,50,6.71,,,Resection,Unknown,,NEGATIVE,-5.5,NEGATIVE,NEGATIVE,BRIP1,NM_032043.2:c.1107C>G,p.(Tyr369*),Yes,IIC,37,,,,,,,,,,,,,,,,,,,,HRD_Run1
+1418-2022,NSW,28/9/2022,17/7/2023,80,4.29,,,Core Biopsy,No,,NEGATIVE,-10.4,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.733G>A,p.(Gly245Ser),,IB,96,,,,,,,,,,,,,,,,,,,PP,
+1418-2363,NSW,5/4/2023,5/7/2023,85,60.2,,,Core Biopsy,Unknown,,NEGATIVE,-7.6,NEGATIVE,,CCNE1,Gene amplification copy number 20.1,p.(=),,IIC,-,TP53,NM_000546.5:c.376-1G>C,p.?,,IB,88,,,,,,,,,,,,,RPAH,HRD_Run4
+1418-2444,SA,29/6/2023,30/6/2023,80,143,,,Resection,No,,POSITIVE,6.2,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.97-1G>T,p.?,,IB,58,RAD51C,NM_058216.2:c.955C>T,p.(Arg319*),Yes,IID,80,,,,,,,,,,,,,,HRD_Run2
+1418-7282,NSW,10/5/2023,13/7/2023,25,71.6,,,Resection,Yes,2,NEGATIVE,-12.6,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.430C>T,p.(Gln144*),,IB,48,,,,,,,,,,,,,,,,,,,NSW GOV HLTH PATH,HRD_Run5
+1418-7371,NSW,24/4/2023,30/6/2023,,,Yes,Cancelled,Resection,Yes,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1418-8017,QLD,12/6/2023,30/6/2023,90,85.5,,,Core Biopsy,Unknown,,POSITIVE,10.3,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.524G>A,p.(Arg175His),,IB,95,,,,,,,,,,,,,,,,,,,PATH QLD,HRD_Run3
+1418-8107,NSW,22/6/2023,3/7/2023,30,8,,,Core Biopsy,No,,NEGATIVE,-1.6,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.517G>A,p.(Val173Met),,IB,22,,,,,,,,,,,,,,,,,,,ACT PATH,HRD_Run4
+1418-8743,QLD,20/6/2023,3/7/2023,70,167,,,Resection,No,,NEGATIVE,-7.3,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.102dup,p.(Pro36Alafs*7),,IB,43,,,,,,,,,,,,,,,,,,,MATER,HRD_Run3
+1418-9138,NSW,12/5/2023,7/7/2023,60,104,,,Resection,No,,NEGATIVE,-11.9,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.747G>T,p.(Arg249Ser),,IB,83,,,,,,,,,,,,,,,,,,,WESTMEAD HOSP,HRD_Run4
+1419-0971,QLD,1/12/2022,3/7/2023,70,77.6,,,Resection,Unknown,,POSITIVE,3.5,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.578A>G,p.(His193Arg),,IB,52,,,,,,,,,,,,,,,,,,,SNP,HRD_Run4
+1419-1150,QLD,16/12/2022,24/7/2023,,19,,,Resection,Yes,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MATER PATH,
+1419-1352,NSW,13/6/2023,7/7/2023,20,2.14,,,Resection,Yes,1,NEGATIVE,-8.4,NEGATIVE,NEGATIVE,TP53,transcript:NM_000546.5:c.784_786del,p.(Gly262del),,III,10,,,,,,,,,,,,,,,,,,,PATH QLD,HRD_Run4
+1419-1733,VIC,30/6/2023,4/7/2023,70,67.4,,,Core Biopsy,No,,POSITIVE,10.6,POSITIVE,POSITIVE,BRCA1,NM_007294.3:c.5212G>A,p.(Gly1738Arg),Yes,IA,82,TP53,NM_000546.5:c.313G>C,p.(Gly105Arg),,IB,69,,,,,,,,,,,,,MELB PATH,HRD_Run4
+1419-1768,VIC,30/6/2023,4/7/2023,85,68.7,,,Resection,No,,POSITIVE,8.7,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.857A>G,p.(Glu286Gly),,III,67,,,,,,,,,,,,,,,,,,,MELB PATH,HRD_Run4
+1419-2208,NSW,4/1/2023,12/7/2023,70,8.48,,,Core Biopsy,Unknown,,POSITIVE,5.1,POSITIVE,,TP53,NM_000546.5:c.706T>C,p.(Tyr236His),,III,68,,,,,,,,,,,,,,,,,,,PATH QLD,HRD_Run5
+1419-2387,VIC,23/6/2023,4/7/2023,20,41.7,,,Resection,Yes,2,NEGATIVE,-7.7,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.376-1G>A,p.(?),,IB,8,,,,,,,,,,,,,,,,,,,DOREVITCH,HRD_Run4
+1419-2489,QLD,24/9/2021,24/7/2023,,,,,Resection,Yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PP,
+1419-4166,VIC,9/6/2023,10/7/2023,50,56.3,,,Core Biopsy,No,,NEGATIVE,-9.9,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.818G>A,p.(Arg273His),,IB,56,,,,,,,,,,,,,,,,,,,DOREVITCH PATH,HRD_Run4
+1419-4954,QLD,12/4/2023,14/7/2023,40,30.8,,,Resection,Unknown,,NEGATIVE,-7.9,NEGATIVE,NEGATIVE,BRCA1,transcript:NM_007294/3 cDNA:c.988G>C,p.(Asp330His),,III,6,,,,,,,,,,,,,,,,,,,LPQ,HRD_Run5
+1419-5035,QLD,19/4/2023,14/7/2023,30,65.7,,,Resection,Yes,2,NEGATIVE,-9.5,NEGATIVE,NEGATIVE,BRCA2,NM_000059.3:c.2384C>T,p.(Ser795Leu),,III,18,TP53,NM_000546.5:c.997del,p.(Arg333Valfs*12),,IB,25,,,,,,,,,,,,,LPQ,HRD_Run5
+1419-5088,VIC,1/5/2023,19/7/2023,70,163,,,Resection,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,AUSTIN PATH,
+1419-5276,NSW,16/6/2023,4/7/2023,,,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,IML PATH,
+1419-5392,TAS,4/7/2023,5/7/2023,70,47.6,,,Cytology,Yes,1,NEGATIVE,-1.1,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.742C>T,p.(Arg248Trp),,IB,84,,,,,,,,,,,,,,,,,,,,HRD_Run2
+1419-5420,NT,7/6/2023,7/7/2023,50,0.65,Yes,Extraction QC,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,RDH,
+1419-5806,QLD,21/2/2023,10/7/2023,70,166,,,Resection,Yes,1,NEGATIVE,-18.3,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.637C>T,p.(Arg213*),,IB,80,,,,,,,,,,,,,,,,,,,SNP,HRD_Run4
+1419-7345,NSW,21/3/2023,10/7/2023,,234,,,Resection,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NSW GOV HLTH PATH,
+1419-7380,NSW,7/6/2023,7/7/2023,80,142,,,Resection,Yes,1,NEGATIVE,-4.9,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.559+1G>T,p.(?),,IB,87,,,,,,,,,,,,,,,,,,,POW,HRD_Run4
+1419-7430,NSW,7/9/2022,11/7/2023,30,30.8,,,Resection,No,,NEGATIVE,-12.8,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.376-1G>T,p.(?),,IB,66,,,,,,,,,,,,,,,,,,,POWH,HRD_Run4
+1419-7483,NSW,20/12/2022,7/7/2023,30,68.9,,,Resection,Yes,2,POSITIVE,2.4,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.713G>A,p.(Cys238Tyr),,IB,47,BRCA2,gene:BRCA2 transcript:NM_000059/3 cDNA:c.8009C>G protein:p.,p.(Ser2670Trp),,III,29,,,,,,,,,,,,,POW,HRD_Run4
+1419-7508,NSW,23/3/2023,11/7/2023,80,56.8,,,Resection,No,,POSITIVE,8.6,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.818G>T,p.(Arg273Leu),,IB,73,,,,,,,,,,,,,,,,,,,POWH,HRD_Run4
+1419-7544,NSW,9/2/2023,11/7/2023,70,2.99,,,Core Biopsy,No,,NEGATIVE,-8.2,NEGATIVE,,TP53,NM_000546.5:c.811G>A,p.(Glu271Lys),,IB,83,,,,,,,,,,,,,,,,,,,WOLLONGONG HOSP,HRD_Run4
+1419-7884,NSW,1/2/2023,6/7/2023,70,125,,,Resection,Unknown,,NEGATIVE,-5.3,NEGATIVE,NEGATIVE,TP53,gene:TP53 transcript:NM_000546/5 cDNA:c.1009C>T,p.(Arg337Cys),,IB,67,,,,,,,,,,,,,,,,,,,POW,HRD_Run4
+1419-7888,VIC,26/5/2023,5/7/2023,65,77.7,,,Resection,No,,NEGATIVE,-9.7,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.392A>T,p.(Asn131Ile),,IB,47,,,,,,,,,,,,,,,,,,,PP,HRD_Run3
+1419-7985,NSW,28/3/2023,7/7/2023,30,54.1,,,Resection,Yes,2,NEGATIVE,-12.9,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.734G>A,p.(Gly245Asp),,IB,25,,,,,,,,,,,,,,,,,,,POW,HRD_Run4
+1419-8210,ACT,14/6/2023,6/7/2023,10,41.1,,,Resection,Yes,3,POSITIVE,4.6,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.770T>C,p.(Leu257Pro),,IB,7,,,,,,,,,,,,,,,,,,,SEAL - POW,HRD_Run3
+1419-8556,NSW,2/5/2023,18/7/2023,70,71.6,,,Resection,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PP,
+1419-8687,VIC,3/7/2023,10/7/2023,30,26.2,,,Core Biopsy,No,,NEGATIVE,-14.6,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.637C>T,p.(Arg213*),,IB,53,,,,,,,,,,,,,,,,,,,AUSTIN PATH,HRD_Run4
+1420-0379,QLD,31/3/2023,14/7/2023,24,59.6,,,Resection,Yes,2,NEGATIVE,-1.7,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.920-2A>G,p.(?),,IB,24,,,,,,,,,,,,,,,,,,,MATER,HRD_Run5
+1420-0679,VIC,18/5/2023,11/7/2023,40,2.93,,,Core Biopsy,No,,POSITIVE,4.1,POSITIVE,POSITIVE,BRCA2,NM_000059.3:c.9017dup,p.(Tyr3006*),Yes,IA,41,TP53,NM_000546.5:c.841G>A,p.(Asp281Asn),,IB,46,,,,,,,,,,,,,RCH/RWH,HRD_Run4
+1420-0691,NSW,30/6/2023,6/7/2023,30,21.3,,,Resection,Unknown,,NEGATIVE,-15.2,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.376-2A>G,p.(?),,,21,,,,,,,,,,,,,,,,,,,POW,HRD_Run4
+1420-1529,VIC,23/6/2023,11/7/2023,10,18.7,Yes,Other (see comments),Resection,Yes,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,DOREVITCH PATH,HRD_Run5
+1420-1988,NSW,12/5/2023,17/7/2023,70,10.4,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,WESTMEAD HOSP,
+1420-6320,QLD,29/6/2023,7/7/2023,5,,Yes,Pathology Review,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PATH QLD,
+1420-6984,NSW,31/3/2023,12/7/2023,50,151,,,Resection,Yes,1,NEGATIVE,-3.2,NEGATIVE,,TP53,NM_000546/5 cDNA:c.814G>A,p.(Val272Met),,IB,39,,,,,,,,,,,,,,,,,,,RPAH,HRD_Run5
+1420-7056,VIC,30/1/2023,10/7/2023,70,40,,,Resection,Yes,1,NEGATIVE,-14.7,NEGATIVE,NEGATIVE,gene:TP53,NM_000546.5:c.659A>G,p.(Tyr220Cys),,IB,69,,,,,,,,,,,,,,,,,,,MELB PATH,HRD_Run5
+1420-7157,QLD,9/6/2023,10/7/2023,70,202,,,Resection,Unknown,,NEGATIVE,-5.8,NEGATIVE,,TP53,NM_000546.5:c.376-18_387del,p.(?),,IB,71,,,,,,,,,,,,,,,,,,,MATER PATH,HRD_Run5
+1420-7167,VIC,2/6/2023,14/7/2023,40,8.69,,,Core Biopsy,No,,POSITIVE,11.9,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.673-1G>A,p.(?),,IB,56,,,,,,,,,,,,,,,,,,,DOREVITCH PATH,HRD_Run5
+1420-7455,QLD,2/6/2023,10/7/2023,30,31.9,,,Resection,Yes,Unknown,POSITIVE,5.6,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.979_993+5delinsA,p.(?),,IB,6,,,,,,,,,,,,,,,,,,,MATER PATH,HRD_Run5
+1420-7676,VIC,5/7/2023,10/7/2023,40,12.4,,,Resection,Yes,3,NEGATIVE,-0.9,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.711G>A,p.(Met237Ile),,IB,36,,,,,,,,,,,,,,,,,,,AUSTIN PATH,HRD_Run5
+1421-0319,VIC,4/7/2023,14/7/2023,60,118,,,Resection,No,,POSITIVE,13.5,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.1024C>T,p.(Arg342*),,IB,58,,,,,,,,,,,,,,,,,,,AU,HRD_Run5
+1421-0626,NSW,21/4/2023,11/7/2023,30,8.78,,,Resection,No,,NEGATIVE,-8.2,NEGATIVE,,TP53,NM_000546.5:c.747_748delinsTT,p.(Arg249_Pro250delinsSerSer),,III,29,,,,,,,,,,,,,,,,,,,POWH,HRD_Run5
+1421-0904,VIC,6/7/2023,20/7/2023,60,81.9,,,Resection,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,RWH,
+1421-1031,NSW,7/6/2023,11/7/2023,20,4.32,,,Resection,Yes,2,NEGATIVE,-2.4,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.443_456del,p.(Asp148Alafs*28),,IB,20,,,,,,,,,,,,,,,,,,,AU,HRD_Run5
+1421-3325,NSW,4/11/2022,12/7/2023,80,34.2,,,Resection,Yes,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PP,
+1421-3467,NSW,28/2/2023,12/7/2023,30,2.96,,,Core Biopsy,Unknown,,NEGATIVE,-5,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.469G>T,p.(Val157Phe),,IB,52,,,,,,,,,,,,,,,,,,,PRA,HRD_Run5
+1421-3918,NSW,1/10/2021,21/7/2023,90,241,,,Resection,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,WESTMEAD HOSP,
+1421-4256,ACT,3/7/2023,18/7/2023,70,35.8,,,Resection,Yes,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PP,
+1421-5741,NSW,27/3/2023,14/7/2023,50,79.2,,,Resection,Yes,2,NEGATIVE,-3.8,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.820G>T,p.(Val274Phe),,IB,75,,,,,,,,,,,,,,,,,,,PP,HRD_Run5
+1421-6344,VIC,15/6/2023,14/7/2023,50,12.9,,,Resection,Yes,2,POSITIVE,3.1,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.376-8_381del,p.(?),,IB,27,,,,,,,,,,,,,,,,,,,LMOP,HRD_Run5
+1421-6392,NSW,13/6/2023,20/7/2023,20,20.8,,,Resection,Yes,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,ST GEORGE HOSP,
+1421-6694,ACT,21/6/2023,12/7/2023,40,118,,,Resection,Yes,2,POSITIVE,6,POSITIVE,NEGATIVE,gene:TP53,NM_000546.5:c.514G>T,p.(Val172Phe),,IB,21,,,,,,,,,,,,,,,,,,,,HRD_Run5
+1421-6702,QLD,12/5/2023,28/7/2023,,,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PATH QLD,
+1421-6779,NSW,15/3/2023,21/7/2023,10,6.41,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,IML PATH,
+1421-7055,ACT,7/7/2023,13/7/2023,40,4.37,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,ACT PATH,
+1421-7117,QLD,5/6/2023,20/7/2023,60,155,,,Cytology,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SNP,
+1421-7165,NSW,3/8/2021,24/7/2023,,0.59,Yes,Extraction QC,Core Biopsy,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,LSNP,
+1421-7187,VIC,26/4/2022,13/7/2023,30,4.7,,,Core Biopsy,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MELB PATH,
+1421-7220,VIC,15/6/2023,13/7/2023,70,32,,,Core Biopsy,Unknown,,NEGATIVE,-6.2,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.517G>A,p.(Val173Met),,IB,82,CDK12,gene amplification (43 copies),p.(=),,III,-,CCNE1,gene amplification (10 copies),p.(=),,,-,,,,,,,MELB PATH,HRD_Run5
+1421-7253,VIC,15/5/2023,13/7/2023,75,57.2,,,Core Biopsy,No,,NEGATIVE,-10.2,NEGATIVE,NEGATIVE,TP53,NM_000546.5:c.329G>C,p.(Arg110Pro),,IB,88,,,,,,,,,,,,,,,,,,,MELB PATH,HRD_Run5
+1421-7272,VIC,20/6/2023,13/7/2023,25,0.75,Yes,Extraction QC,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MELB PATH,
+1421-8465,QLD,24/2/2023,20/7/2023,30,Too Low,Yes,Extraction QC,Core Biopsy,Yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SNP,
+1421-8557,NSW,24/11/2022,28/7/2023,,0.4,Yes,Extraction QC,Core Biopsy,Yes,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NSW HEALTH PATH,
+1421-8639,NSW,17/4/2023,17/7/2023,70,77.9,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,POW,
+1421-8729,VIC,15/8/2022,14/7/2023,80,54.1,,,Core Biopsy,No,,POSITIVE,6.1,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.747G>T,p.(Arg249Ser),,IB,64,,,,,,,,,,,,,,,,,,,,HRD_Run5
+1421-9276,QLD,23/6/2023,14/7/2023,70,155,,,Resection,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MATER,HRD_Run5
+1422-0004,QLD,16/5/2023,14/7/2023,30,99.2,,,Resection,Unknown,,POSITIVE,9,POSITIVE,NEGATIVE,TP53,NM_000546.5:c.584T>C,p.(Ile195Thr),,IB,23,,,,,,,,,,,,,,,,,,,MATER PATH,HRD_Run5
+1422-0028,QLD,4/7/2023,14/7/2023,60,91.3,,,Resection,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MATER,
+1422-4844,NSW,17/4/2023,21/7/2023,30,1.67,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,RPAH,
+1422-5013,SA,,17/7/2023,50,39.3,,,Resection,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PP,
+1422-6657,NSW,12/4/2023,17/7/2023,70,0.89,Yes,Extraction QC,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,POW,
+1422-6877,VIC,9/6/2023,20/7/2023,20,2.56,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,DOREVITCH PATH,
+1422-7013,NSW,5/4/2023,24/7/2023,,,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PP,
+1422-7191,VIC,10/4/2023,18/7/2023,,,,,Resection,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1422-8086,NSW,9/2/2023,26/7/2023,,2.4,,,Core Biopsy,Yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,DHM PATH,
+1423-0123,NSW,3/7/2023,27/7/2023,,66.8,,,Resection,Yes,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,WESTMEAD HOSP,
+1423-0148,NSW,27/6/2023,24/7/2023,,13.9,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NSW GOV HLTH PATH,
+1423-0294,NSW,1/7/2023,27/7/2023,,67.6,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,WESTMEAD HOSP,
+1423-0636,ACT,24/4/2023,26/7/2023,,45.1,,,Resection,Yes,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,POW,
+1423-0957,NSW,6/7/2023,19/7/2023,,,Yes,Cancelled,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1423-1155,WA,6/7/2023,2/8/2023,,,,,Resection,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PATHWEST,
+1423-1555,VIC,6/4/2023,19/7/2023,70,6,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PMCC,
+1423-3104,WA,17/7/2023,26/7/2023,,10.5,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,ACL,
+1423-3150,VIC,13/7/2023,25/7/2023,,54,,,Resection,Yes,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,LMOP,
+1423-3211,NSW,24/4/2023,31/7/2023,,1.95,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,LISMORE BASE HOSP,
+1423-3900,NSW,22/7/2019,24/7/2023,,,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PP,
+1423-4069,NSW,2/3/2023,20/7/2023,,,Yes,Pathology Review,Resection,Yes,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,ST GEORGE HOSP,
+1423-4355,NSW,28/6/2023,25/7/2023,,82.8,,,Resection,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CAPITAL PATH,
+1423-4641,VIC,3/11/2022,24/7/2023,,2.04,,,Core Biopsy,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,EPWORTH PATH,
+1423-4681,QLD,6/6/2023,2/8/2023,,,,,Resection,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,LPQ,
+1423-4734,NSW,17/5/2022,20/7/2023,,59,,,Resection,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,WESTMEAD HOSP,
+1423-4735,SA,4/7/2023,20/7/2023,40,67.8,,,Resection,Yes,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SA PATH,
+1423-4776,SA,4/7/2023,20/7/2023,40,71,,,Resection,Yes,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SA PATH,
+1423-4788,NSW,2/6/2023,2/8/2023,,,,,Core Biopsy,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1423-6127,NSW,24/5/2023,26/7/2023,,93.2,,,Resection,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NSW HAELTH PATH,
+1423-6242,QLD,28/6/2023,2/8/2023,,,,,Resection,Yes,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,LPQ,
+1423-6295,QLD,28/6/2023,21/7/2023,,115,,,Resection,Yes,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PATH QLD,
+1423-6695,VIC,3/7/2023,24/7/2023,,11.9,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,DOREVITCH PATH,
+1423-7243,NSW,28/6/2023,31/7/2023,,15.5,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,WESTMEAD HOSP,
+1424-2160,NSW,11/4/2023,25/7/2023,,150,,,Resection,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PP,
+1424-2843,QLD,22/3/2023,24/7/2023,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1424-2887,NSW,17/3/2023,28/7/2023,,8.13,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,DHM PATH,
+1424-3024,QLD,27/3/2023,17/4/2023,75,98.33,,,Core Biopsy,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1424-3104,QLD,11/6/2019,24/7/2023,,,,,Core Biopsy,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MATER PATH,
+1424-3129,QLD,11/7/2023,24/7/2023,,217,,,Resection,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MATER PATH,
+1424-3133,QLD,1/12/2022,1/8/2023,,,,,Core Biopsy,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1424-3197,QLD,19/4/2023,2/8/2023,,,,,Resection,Yes,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PP,
+1424-3327,NSW,18/11/2022,4/8/2023,,,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NSW HEALTH PATH,
+1424-8101,NSW,30/6/2023,31/7/2023,,43.4,,,Resection,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,WESTMEAD HOSP,
+1424-8121,NSW,7/7/2023,28/7/2023,,8.76,,,Core Biopsy,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NSW GOV HLTH PATH,
+1424-8966,VIC,19/7/2023,1/8/2023,,60.4,,,Resection,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,RCH,
+1424-8996,VIC,19/7/2023,4/8/2023,,,,,Resection,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1424-9064,SA,11/7/2023,25/7/2023,,123,,,Resection,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SA HLTH PATH,
+1424-9246,VIC,14/7/2023,26/7/2023,,,,,Core Biopsy,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1424-9389,NSW,7/11/2022,26/7/2023,,13.32,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1424-9422,QLD,16/6/2023,26/7/2023,,,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1424-9609,QLD,31/3/2021,26/7/2023,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1425-1384,QLD,10/7/2023,27/7/2023,,105,,,Resection,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SNP,
+1425-1425,QLD,18/7/2023,31/7/2023,,105,,,Resection,Yes,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SNP,
+1425-2372,VIC,25/7/2023,4/8/2023,,,,,Core Biopsy,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1425-2862,ACT,18/7/2023,24/7/2023,,10.6,,,Core Biopsy,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NSW GOV HLTH PATH,
+1425-4257,SA,20/6/2022,27/7/2023,,,,,Resection,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1425-4318,QLD,12/7/2023,27/7/2023,,,,,Resection,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1425-4328,NSW,22/3/2023,28/7/2023,,,,,Cytology,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1425-4399,NSW,6/12/2022,22/12/2022,20,10,,,Cytology,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1425-4465,NSW,21/4/2023,28/7/2023,,5.13,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,RPAH,
+1425-4488,NSW,17/5/2023,3/8/2023,,,,,Resection,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,DHM,
+1425-4564,VIC,21/7/2023,27/7/2023,,3.4,,,Resection,Yes,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MELB PATH,
+1425-4617,WA,22/3/2021,28/7/2023,,,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1425-4907,TAS,12/7/2023,28/7/2023,,1.91,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,LGH,
+1425-4969,WA,24/7/2023,28/7/2023,,,,,Resection,Yes,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1425-5042,WA,3/7/2023,28/7/2023,,,,,Resection,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1425-5147,NSW,9/5/2023,28/7/2023,,,,,Resection,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1425-5254,NSW,14/7/2023,28/7/2023,,,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1425-5293,ACT,19/7/2023,2/8/2023,,,,,Resection,Yes,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SEALS PATH,
+1425-5401,VIC,30/6/2023,2/8/2023,,29.1,,,Resection,Yes,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,AUSTIN PATH,
+1425-5632,NSW,30/6/2023,3/8/2023,,,,,Core Biopsy,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,WESTMEAD HOSP,
+1425-5740,WA,7/7/2023,28/7/2023,,,,,Cytology,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1425-5822,VIC,24/7/2023,2/8/2023,,,,,Resection,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,AU,
+1426-0394,ACT,13/7/2023,28/7/2023,,7.85,,,Core Biopsy,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CAPITAL PATH,
+1426-0797,QLD,5/7/2023,31/7/2023,,36.3,,,Core Biopsy,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MATER PATH,
+1426-0970,VIC,25/1/2023,4/8/2023,,,,,Core Biopsy,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,TISSUPATH,
+1426-1014,VIC,20/3/2023,31/7/2023,,,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1426-1074,VIC,20/6/2023,28/7/2023,,,,,Core Biopsy,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1426-1161,NSW,20/6/2023,4/8/2023,,,,,Cytology,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PP,
+1426-1193,NSW,3/7/2023,31/7/2023,,167,,,Resection,Yes,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,POW,
+1426-1305,QLD,17/6/2022,31/7/2023,,2.19,Yes,Cancelled,Resection,Yes,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MATER PATH,
+1426-1330,NSW,21/4/2023,31/7/2023,,,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1426-1779,VIC,20/6/2023,1/8/2023,,116,,,Resection,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1426-1824,WA,19/6/2023,31/7/2023,,,,,Resection,Yes,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1426-3024,QLD,12/5/2023,28/7/2023,,,Yes,Cancelled,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PATH QLD,
+1426-3266,NSW,9/12/2022,31/7/2023,,,,,Resection,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1426-3323,QLD,17/10/2022,31/7/2023,,,,,Core Biopsy,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1426-3519,VIC,23/6/2022,4/8/2023,,,,,Core Biopsy,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1426-3832,NSW,10/7/2023,1/8/2023,,,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1426-4024,NSW,28/3/2023,31/7/2023,,,,,Cytology,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1426-4075,TAS,27/4/2023,1/8/2023,,16.6,,,Core Biopsy,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,HOBART PATH,
+1426-4079,NSW,3/5/2023,3/8/2023,,,,,Resection,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,RPAH,
+1426-4538,QLD,27/5/2022,1/8/2023,,,,,Resection,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1426-4827,NSW,21/7/2023,1/8/2023,,,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1426-7564,NSW,19/7/2023,2/8/2023,,,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1426-9247,VIC,29/3/2023,3/8/2023,,,,,Resection,Yes,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1427-0149,QLD,21/7/2023,3/8/2023,,,,,Core Biopsy,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1427-0227,VIC,27/7/2023,3/8/2023,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MELB PATH,
+1427-0269,VIC,30/7/2023,2/8/2023,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MELB PATH,
+1427-0286,WA,28/7/2023,3/8/2023,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1427-0327,VIC,1/3/2023,3/8/2023,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
