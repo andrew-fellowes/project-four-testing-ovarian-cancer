@@ -4,6 +4,8 @@
 
 The purpose of this project is to create a tool that can help pathologists predict which biopsy samples tested by a neural network-based diagnostic test are likely to have received a false positive or a false negative result, thereby increasing the diagnostic efficacy of the test.
 
+![hgsoc](hgsoc.png)
+
 The Peter MacCallum Cancer Centre uses a test from SOPHIA Genetics to test biopsy samples to determine whether patients with ovarian cancer will respond to a particular drug therapy. The test looks for ‘genomic instability’, which is where there are multiple breaks in the DNA sequence. If this feature (or 'phenotype') is seen in ovarian cancer genomes, it is a positive predictive biomarker for treatment with new drugs (i.e. such patients are likely to do better than if treated with standard drugs).
 
 BRCA1 and BRCA2 are genes that encode proteins that help repair damaged DNA. Everyone has two copies of each of these genes—one copy inherited from each parent. BRCA1 and BRCA2 are called tumor suppressor genes because when they stop functioning, usually due to harmful (or pathogenic) variants (or mutations), tumours may develop.
@@ -12,14 +14,17 @@ Some people have a genetic predisposition to ovarian (and breast) cancer because
 
 In ovarian cancer, the cancerous cells will often have multiple breaks in their DNA (genomic instability) because BRCA1 or BRCA2 is no longer functional. Patients with this 'phenotype' are likely to respond well to a particular drug therapy that inhibits backup DNA repair processes, resulting in cancer cell death. This drug is prescribed once a patient is in remission and helps control future tumor growth. The drug has the advantage of having fewer side-effects than other cancer treatments available.
 
+![broken_dna](broken_dna.png)
+
 The ’gold standard’ test for genetic instability is the Myriad Genetics myChoice test; however, this is not available in Australia. An alternative, the SOPHIA Genetics test, uses a machine learning model trained to detect genomic instability within cancer genomes. This model has high accuracy compared to Myriad (approximately 95%) however, false negatives and false positives remain an issue and have serious consequences for the patients – whether being prescribed a drug that is ineffective (false positive) or not receiving a drug when it is suitable (false negative). 
 
 We have been supplied training data from the Peter MacCallum Cancer Centre. This is a series of test results from 139 cases, with corresponding Myriad and SOPHIA results. The data includes many independent variables for training a model.
 
 Two approaches have been taken: development of a neural network using TensorFlow, creating a binary classification model that can predict which SOPHIA genomic instability results may be misclassifications; alternatively, given the limited number of results and the high risk of a neural network becoming overfitted, a Random Forest model to achieve the same prediction.
 
-
 ## Features
+
+The complete list of features obtained for model training is listed below.
 
 | Heading | Description |
 | ---------- | ---------- |
@@ -43,7 +48,7 @@ Two approaches have been taken: development of a neural network using TensorFlow
 | 50x | Percentage of base pair positions in Target Panel regions (not lpWGS regions) that get >50x unique coverage  |
 | 25x | Percentage of base pair positions in Target Panel regions (not lpWGS regions) that get >25x unique coverage  |
 | DupFrac | Fraction of all reads that are duplicates of each other (based on their mapped position on reference genome). Duplicates arise from PCR amplification of the sample. Duplicate reads are bioinformatically removed before coverage is calculated i.e. coverage is calculated for 'unique' reads |
-| LowCovRegions | The number of regions with the Target Panel where coverage goes below 100x unique reads. I A high value indicates a poor sample or analysis |
+| LowCovRegions | The number of regions with the Target Panel where coverage goes below 100x unique reads. A high value indicates a poor sample or analysis |
 | PurityPloidyRatio | Ratio between tumour content and local number of chromosomal regions (ploidy), estimated from the strength of the copy number signal seen in the assay. |
 | ResNoise | Standard deviation of the normalized lpWGS coverage profile with respect to the smoothed lpWGS coverage profile |
 | SignalNoiseRatio | Strength of the signal induced in the normalized lpWGS coverage profile by all copy number aberrations present in the sample divided by the residual noise |
@@ -56,18 +61,8 @@ Two approaches have been taken: development of a neural network using TensorFlow
 | SOPHiAGIIndex | The Genomic Instability Index for the method being validated - the SOPHiA Genetics HRD assay. Range form -20 to 20, a value greater than 0 corresponds to genomically unstable |
 | SophiaGIStatus | 1 = HRD Positive, 2 = HRD Negative, 3 = Inconclusive, 4 = Rejected |
 
-## External Documents
-
-[Link](https://www.biorxiv.org/content/biorxiv/early/2022/07/08/2022.07.06.498851.full.pdf) to preprint describing training of the SOPHiA Genetics CNN 
-algorithm.
-
-
-[Genomic Integrity Report](HRD_202305051913-21752-0072-GI-Report.pdf) - contains useful information.
-
-[LICENSE](LICENSE)
-
 <h2>Preparation and Cleaning of Data</h2>
-<li>Python code was used to organise and preprocess data for further analysis and storage. The code - <i>PeterMac_HRD_clinical_data.ipynb</i> - processed and  transformed data from multiple CSV files, merged them based on specific columns, and applied various calculations and data cleaning operations. The final DataFrame was saved as a CSV file. In particular:</li><ul>
+<li>Python code was used to organise and preprocess data for further analysis and storage. The code - <i>PeterMac_extract_merge_pdf_gi_qa_stats.ipynb</i> and <i>PeterMac_HRD_clinical_data.ipynb</i> - processed and transformed data from multiple PDF and CSV files, merged them based on specific columns, and applied various calculations and data cleaning operations. The final DataFrame was saved as a CSV file. In particular:</li><ul>
 <li>Searched for specific CSV files in the source folder using glob. </li>
 <li>Merges DataFrames based on specific columns using the pd.merge function. </li>
 <li>Merges two DataFrames based on specific columns. </li>
@@ -75,7 +70,6 @@ algorithm.
 <li>Calculates the age of samples and drops unnecessary columns. </li></ul>
 The processed test data is stored in MongoDB database as the <i>sofia_test_model</i> document, in the <i>python_db_processed_data.ipynb</i> collection.
  <h2>Preprocessing the data for the model</h2>
-
 
 
 <p>Data preprocessing performing data cleaning and transformation steps to prepare the dataset for machine learning using the pandas library in Python in summary:</p>
@@ -107,7 +101,7 @@ The processed test data is stored in MongoDB database as the <i>sofia_test_model
 
 <li>A number of models were run with different combinations of hyperparameters. For the purposes of this project the hyperparameters chosen were the number of nodes per layer, the number of layers, the number of epochs and different combinations of three activation functions: sigmoid, reLU and tanh. Given this is a binary classification problem, the activation function applied to the output layer remained sigmoid.</li> 
 <li>Included here are the results of <b>two</b> of these attempts.</li>
-<li>Finally, keras_tuner was used in order to see whether it was possible to achieve a better result closer or greater than 75%. The auto-tune method represents a “brute “force” method of testing each combination within the range of parameters set. It is expensive in terms of tie, so the range of parameters tested were constrained to the ranges tested in the trial and error attempts, with a maximum of 30 epochs.</li>
+<li>Finally, keras_tuner was used in order to see whether it was possible to achieve a better result closer or greater than 75%. The auto-tune method represents a “brute “force” method of testing each combination within the range of parameters set. It is expensive in terms of time, so the range of parameters tested were constrained to the ranges tested in the trial and error attempts, with a maximum of 30 epochs.</li>
 <p><b>Note:</b> the results are summarised using the following conventions – the number of nodes are written per layer with a “/” separating the layers; similarly the activation functions used per layer are also seperated by a “/”. The first and last layers refer to the input and output layers respectively.</li></ul>
 <b>Model 1</b><ul>
 <li>Layers 4</li>
@@ -131,7 +125,7 @@ The processed test data is stored in MongoDB database as the <i>sofia_test_model
 <img width="253" alt="image" src="https://github.com/andrew-fellowes/project-four-testing-ovarian-cancer/assets/124494379/496a97d7-8549-4678-9565-8ec7cd91382b">
 
 <b>Summary of results</b>
-The first model, using 4 layers and 100 epochs, showed the most accurate results. It has an accuracy score of 86% and a loss score of 37% compared to the second model with accuracy of 71% and loss of 59%. Although this appears promising the number of records forming the training and test set (summing to 139 in total) cast doubts on the efficacy of these results, with the very real likliehood that hgih results were obtained because the model was overfitted, having learnt the training data.
+The first model, using 4 layers and 100 epochs, showed the most accurate results. It has an accuracy score of 86% and a loss score of 37% compared to the second model with accuracy of 71% and loss of 59%. Although this appears promising the number of records forming the training and test set (summing to 139 in total) cast doubts on the efficacy of these results, with the very real likliehood that high results were obtained because the model was overfitted, having learnt the training data.
 
 <p><b>Keras Tuner</b></p>
 
@@ -154,28 +148,35 @@ The first model, using 4 layers and 100 epochs, showed the most accurate results
 
 <p>Findings on Neural Netowrk</p>
 
-<p>The Neural Network model seemd unstable. Manual optimisation led to what seemed like a reasonable resilt, with low loss and hgih accuracy, but this is contradicted byt eh results of the hyperperameter auto tuner, which had high accuracy but overly high loss. This is indicative of the fact that the sample size of the data set was far too small to make this an effective model. Additionally, the indcidence of disagreements between the SOPHiA model and the Myriad model is very small, at approximately 7% of the sample size, meaning that the training data is also unbalanced, with a very large amount of true positives and negatives, but only a small number of false positives and negatives. This led to the conclusion that the small dataset probably led to overfitting and a model that would not adapt well to testing unseen data.</p>
+<p>The Neural Network model seemed unstable. Manual optimisation led to what seemed like a reasonable result, with low loss and high accuracy, but this is contradicted by the results of the hyperperameter auto tuner, which had high accuracy but overly high loss. This is indicative of the fact that the sample size of the data set was far too small to make this an effective model. Additionally, the incidence of disagreements between the SOPHiA model and the Myriad model is very small, at approximately 7% of the sample size, meaning that the training data is also unbalanced, with a very large amount of true positives and negatives, but only a small number of false positives and negatives. This led to the conclusion that the small dataset probably led to overfitting and a model that would not adapt well to testing unseen data.</p>
 
 <p>As a result a second model was employed: A Random Forest Model.</p>
 
 <h2>Random Forest</h2>
-[To Be Completed]
+<h3>Steps taken within the code:</h3><ul>
+<li>The <i>Preprocess_data_ for_Random_Forest_Model_Training.ipynb</i> notebook performs cleaning of raw data for input to the model by dropping redundant features, removeing placeholders, casting values to numeric, one-hot encoding categorical features, and imputing missing values.</li>
+<li><i>The Train_Random_Forest_with_Cross-Validation.ipynb</i> notebook creates the random forest model, produces a confusion matrix, classification report, important features list, and saves the model in pickle format for re-use. Rather than employing a standard hold-out validation for the random forest, we employed K-fold cross-validation as this makes more efficient use of our small training dataset. 
+<li>We also visualised the high dimensional feature set in a UMAP plot. UMAP UMAP (Uniform Manifold Approximation and Projection) is a fast general purpose dimension reduction algorithm like PCA that can handle large, high dimensional and sparse datasets. Colouring the points by model prediction reveals that no single dimension is associated with predicted disagreement.</li></ul>
+<p><b>Random Forest Predictions</b></p>
+<li>When we applied our random forest model to our naive dataset, it predicted 100% of the samples should be in agreement with a Myriad myChoice result, whereas our optimised neural network model predicted 21% would be in disagreement and 79% in agreement. We do not know the truth about this dataset due to not having reference test results, however we suspect the true error rate is somewhere in-between.</li></ul>
+<li>We visualised the association between predicted true or false SOPHiA results and the value of the result and showed that a negative genomic instability result was much more likely to be predicted false than a positive genomic instability result.</li></ul>
+
 
 <p><h2>Further steps - re modelling</h2></p><ul>
 
-<li>A larger data set is required; however, sufficient test numbers (with a suitable score from myriad) are hard to achieve. The development of the SOPHiA model had to rely on methods to produce artificial data  owing to the difficulty of providing sufficient examples of genetic instability, especially where mutations have occurred in the BRCA 1 and 2 genes. This casts some doubt on whether sufficient data can be easily gathered to provide an adequate test set</li>
+<li>A larger data set is required; however, sufficient test numbers (with a suitable score from Myriad) are hard to achieve. The development of the SOPHiA model had to rely on methods to produce artificial data owing to the difficulty of providing sufficient examples of genetic instability, especially where mutations have occurred in the BRCA1 and 2 genes. This casts some doubt on whether sufficient data can be easily gathered to provide an adequate test set</li>
 <li>Methods of data augmentation are therefore likely to be required - to create synthetic data to provide greater inputs to the model.</li>
 <li>Additionally, further methods are also required:<ul>
   <li>Use methods to balance the training data with examples of where the Myriad and SOPHiA data disagree - such as putting a greater weighting on these results or oversampling to address teh imbalance</li>
   <li>Tune the batch size used during training. Smaller batch sizes may introduce more randomness and noise during updates, potentially leading to better generalization.</li>
-  <li>Experiment further with ensemble methods, such as combining the predictions of multiple neural network models or using other machine learning algorithms, like Random Forest or Gradient Boosting, to create a more powerful ensemble model.</li>
-  <li>Use K-fold cross-validation to get a more reliable estimate of the model's performance and avoid overfitting to a specific train-test split.</li>
+  <li>Experiment further with ensemble methods, such as combining the predictions of multiple neural network models or using other machine learning algorithms, like Support Vectors or Gradient Boosting, to create a more powerful ensemble model.</li>
+  <li>More extensive use of K-fold cross-validation to get a more reliable estimate of the model's performance and avoid overfitting to a specific train-test split.</li>
   <li>Implement early stopping based on the model's performance on the validation set to prevent overfitting and save computation time.</li></li>
 <li>Experiment with different activation functions for the hidden layers trying others like Leaky ReLU, ELU, or SELU.</li>
 <li>Implement regularization techniques like L1 and L2 regularization to prevent overfitting. These techniques add penalty terms to the loss function based on the magnitude of weights, encouraging the model to prefer simpler solutions.</li>
 <li>Adjust the learning rate of the optimizer to control the step size during gradient updates. A smaller learning rate can make the training process more stable, but it might require more epochs for convergence.</li>
 <li>Experiment with different optimizers like RMSprop, Adamax, or Nadam to see if they lead to improved convergence and generalization.</li>
-<li>Undertake further feature engineering - for instance Principle Component Analysis will remove features that do not provide much information, simplifying the data set, removing noise and improving the model's efficiency. </li></ul>ul>
+<li>Undertake further feature engineering - for instance Principle Component Analysis will remove features that do not provide much information, simplifying the data set, removing noise and improving the model's efficiency. </li></ul>
 
 <h2>Data Base</h2>
 
@@ -185,10 +186,10 @@ The first model, using 4 layers and 100 epochs, showed the most accurate results
 
 <li> We did not deploy a database accessible individually by each member of the team - for the practical purposes of this project it was not possible to set up a hosted cloud database, so instead we used databases stored locally on our machines, but replicable given the same files and use of the same code creating a MongoDB instance</li>
 
-<li>A seried of python scripts were written in order to prodice databases that could be reproduced locally</li>li>
+<li>A series of python scripts were written in order to produce databases that could be reproduced locally</li>
 <li>These scripts have been designed to input from csv or JSON files, and to allow the user to select the particular file they wish to input, given a large number of files are stored within the directories</li>
-<li>Each file was date and time stamped within the file name. The code parsed out the date and time stamp (using regx), recording it within the date field of the individual collections.</li>
-<li>Additionally the csv and JSON files needed to be put into a structure allowing for easy querying. this was particularly the case in entering the epoch records created  during the model testing. This was done by iterating though the files and adding the epochs in a nested field for each time a model was run</li>
+<li>Each file was date and time stamped within the file name. The code parsed out the date and time stamp (using regex), recording it within the date field of the individual collections.</li>
+<li>Additionally the csv and JSON files needed to be put into a structure allowing for easy querying. this was particularly the case in entering the epoch records created during the model testing. This was done by iterating though the files and adding the epochs in a nested field for each time a model was run</li>
 <li>A series of four collections were put together within the sofia_test_model database</li><ul>
   <li>confusion_matrix</li>
   <li>test_result</li>
@@ -196,5 +197,12 @@ The first model, using 4 layers and 100 epochs, showed the most accurate results
   <li>processed data</li>
 </ul>
 
-<li>Owing to the project time and the number of changes to models, the actual database does not contain recors of all model runs - in particular an adidtional code would have been required to write a collection containing the results of the keras_tuner models, and the parameters for each test model proved problematic to extract as other than a single string</li>
+<li>Owing to the project time and the number of changes to models, the actual database does not contain records of all model runs - in particular an adidtional code would have been required to write a collection containing the results of the keras_tuner models, and the parameters for each test model proved problematic to extract as other than a single string</li>
 <li>Further development is needed on the database to ensure that it is capable of storing all variations of the models tested, as well as the results of the Random Forest model.</li>
+
+## External Documents
+
+[Link](https://www.biorxiv.org/content/biorxiv/early/2022/07/08/2022.07.06.498851.full.pdf) to preprint describing training of the SOPHiA Genetics CNN 
+algorithm.
+
+[LICENSE](LICENSE)
