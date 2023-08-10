@@ -1,10 +1,25 @@
-# project-four-testing-ovarian-cancer
+# Evaluating the Accuracy of a Predicitive Cancer Test
 
-Clean data to start the project is [./Resources/PeterMac_HRD_Validation.csv](Resources/PeterMac_HRD_Validation.csv)
+## Overview
 
-This is the validation data that shows the SOPHiA Genetics assay performed accurately compared to the Myriad Genetics assay.
+The purpose of this project is to create a tool that can help pathologists predict which biopsy samples tested by a neural network-based diagnostic test are likely to have received a false positive or a false negative result, thereby increasing the diagnostic efficacy of the test.
 
-Column Descriptions:
+The Peter MacCallum Cancer Centre uses a test from SOPHIA Genetics to test biopsy samples to determine whether patients with ovarian cancer will respond to a particular drug therapy. The test looks for ‘genomic instability’, which is where there are multiple breaks in the DNA sequence. If this feature (or 'phenotype') is seen in ovarian cancer genomes, it is a positive predictive biomarker for treatment with new drugs (i.e. such patients are likely to do better than if treated with standard drugs).
+
+BRCA1 and BRCA2 are genes that encode proteins that help repair damaged DNA. Everyone has two copies of each of these genes—one copy inherited from each parent. BRCA1 and BRCA2 are called tumor suppressor genes because when they stop functioning, usually due to harmful (or pathogenic) variants (or mutations), tumours may develop.
+
+Some people have a genetic predisposition to ovarian (and breast) cancer because they have already inherited a pathogenic BRCA1 or BRCA2 variant from one parent. Although they would have also inherited a normal copy of that gene from the other parent (because embryos inheriting two harmful variants cannot develop), the normal copy can be lost or changed in some cells in the body during the person’s lifetime. Cells that lose their remaining functioning BRCA1 or BRCA2 genes can grow out of control and become cancer.
+
+In ovarian cancer, the cancerous cells will often have multiple breaks in their DNA (genetic instability) because BRCA1 or BRCA2 is no longer functional. Patients with this 'phenotype' are likely to respond well to a particular drug therapy that inhibits backup DNA repair processes, resulting in cancer cell death. This drug is prescribed once a patient is in remission and helps control future tumor growth. The drug has the advantage of having fewer side-effects than other cancer treatments available.
+
+The ’gold standard’ test for genetic instability is the Myriad Genetics myChoice test; however, this is not available in Australia. An alternative, the SOPHIA Genetics test, uses a machine learning model trained to detect genomic instability within cancer genome. This model has high accuracy compared to Myriad (approximately 95%) however, false negatives and false positives remain an issue and have serious consequences for the patients – whether being prescribed a drug that is ineffective (false positive) or not receiving a drug when it is suitable (false negative). The idea is
+
+We have been supplied training data from the Peter MacCallum Cancer Centre. This is a series of test results from 135 cases, with corresponding Myriad and SOPHIA results. The data includes many independent variables for training a model.
+
+Two approaches have been taken: development of a neural network using TensorFlow, creating a binary classification model that can predict which SOPHIA genomic instability results may be misclassifications; alternatively, given the limited number of results and the high risk of a neural network becoming overfitted, a Random Forest model to achieve the same prediction.
+
+
+## Features
 
 | Heading | Description |
 | ---------- | ---------- |
@@ -41,6 +56,7 @@ Column Descriptions:
 | SOPHiAGIIndex | The Genomic Instability Index for the method being validated - the SOPHiA Genetics HRD assay. Range form -20 to 20, a value greater than 0 corresponds to genomically unstable |
 | SophiaGIStatus | 1 = HRD Positive, 2 = HRD Negative, 3 = Inconclusive, 4 = Rejected |
 
+## External Documents
 
 [Link](https://www.biorxiv.org/content/biorxiv/early/2022/07/08/2022.07.06.498851.full.pdf) to preprint describing training of the SOPHiA Genetics CNN algorithm.
 
