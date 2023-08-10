@@ -58,8 +58,143 @@ Two approaches have been taken: development of a neural network using TensorFlow
 
 ## External Documents
 
-[Link](https://www.biorxiv.org/content/biorxiv/early/2022/07/08/2022.07.06.498851.full.pdf) to preprint describing training of the SOPHiA Genetics CNN algorithm.
+[Link](https://www.biorxiv.org/content/biorxiv/early/2022/07/08/2022.07.06.498851.full.pdf) to preprint describing training of the SOPHiA Genetics CNN 
+algorithm.
+
 
 [Genomic Integrity Report](HRD_202305051913-21752-0072-GI-Report.pdf) - contains useful information.
 
 [LICENSE](LICENSE)
+
+<h2>Preparation and Cleaning of Data</h2>
+<li>Python code was used to organise and preprocess data for further analysis and storage. The code - <i>PeterMac_HRD_clinical_data.ipynb</i> - processed and  transformed data from multiple CSV files, merged them based on specific columns, and applied various calculations and data cleaning operations. The final DataFrame was saved as a CSV file. In particular:</li><ul>
+<li>Searched for specific CSV files in the source folder using glob. </li>
+<li>Merges DataFrames based on specific columns using the pd.merge function. </li>
+<li>Merges two DataFrames based on specific columns. </li>
+<li>Removes entries not related to the BRCA1 or BRCA2 genes. </li>
+<li>Calculates the age of samples and drops unnecessary columns. </li></ul>
+The processed test data is stored in MongoDB database as the <i>sofia_test_model</i> document, in the <i>python_db_processed_data.ipynb</i> collection.
+ <h2>Preprocessing the data for the model</h2>
+
+
+
+<p>Data preprocessing performing data cleaning and transformation steps to prepare the dataset for machine learning using the pandas library in Python in summary:</p>
+<li><b>Drop Unnecessary Columns: :</b>  Drops specific columns like "SampleID", "SeqRunID", and "DDMSampleID" that are not beneficial for the analysis. </li>
+<li><b>Convert Data Types: :</b>  Converts columns like "MonthsOld" and "Purity" to numeric data types for further analysis. It handles missing values by converting them to zeros. </li>
+<li><b>Create Non-agreement Column: :</b>  Creates a new column "Non_agreement" which represents the absolute difference between "SophiaGIStatus" and "MyriadGIStatus".</li>
+<li><b>Clean Numeric Columns: :</b> Replaces missing values (represented as '-') in columns like "PurityPloidyRatio", "ResNoise", and "SignalNoiseRatio" with zeros. Handles '.' values in "Purity" and "%VariantFraction" by converting them to zeros. </li>
+<li><b>Label Encoding: :</b>  Applies label encoding to the "Variant" column, converting categorical values into numerical representations. </li>
+<li><b>Grouping and Binning: :</b>  Groups data and calculates counts for columns like "QAStatus", "Gene", "Variant", and "PurityPloidyRatio".</li>
+<li><b>One-Hot Encoding:</b> Performs one-hot encoding on categorical columns like "QAStatus", "Gene", "Variant", and "Source", creating binary columns for each unique value. This expands the categorical columns into a more suitable format for machine learning algorithms. </li>
+
+<li>Neural Network</li>
+<p>The purpose of a neural network is to approximate complex, non-linear relationships between inputs and outputs in data with the result that they can automatically learn patterns and representations from the data, allowing them to make predictions or decisions based on new, unseen data.</P>
+<p>A neural network was proposed and tried in this exercise as it can produce a high level of accuracy. In order to build this model we used the Tensor Flow library.
+
+<h3>Steps taken within the code:</h3><ul>
+<li>main_process Function</li><ul>
+<li>The main_process function is the core of the training process. It takes several arguments, including a callback, scaled training data, target data, neural network model, and a report interval. It trains the model using the provided data, runs for a set number of epochs, and reports loss and accuracy at specified intervals.</li></ul>
+<li>Optimisation</li><ul>
+<li>The data is optimised before feeding it into the neural network. This involves handling missing values and performing feature scaling. </li></ul>
+<li>Principal Component Analysis (PCA) </li><ul>
+<li>This section involves performing Principal Component Analysis (PCA) on the dataset. PCA is a dimensionality reduction technique. The code splits the data into training and testing sets, applies PCA to the training data, and transforms the testing data accordingly. It then creates new DataFrames for the PCA-transformed data. </li></ul>
+<li>Data Scaling</li><ul>
+<li>The code uses the StandardScaler from scikit-learn to scale the data before training the neural network. Scaling is important for ensuring that features are on a similar scale, which can improve convergence during training. </li></ul>
+<li>Callback Functions</li><ul>
+<li>It is important for the model to output its test results to ensure that they can be retrieved and examined as the model is developed and tuned.  This model is intended to provide a quality control test concerning whether patients will respond to a specific drug regime, hence its results need to be available for inspection. </li>
+<li>To achieve this two call back functions have been developed: <b>final_callback</b> and <b>loss_accuracy_callback</b>. The final_callback function prints a message passed to it, and the loss_accuracy_callback function prints loss and accuracy information for each epoch during training. This is then output into JSON and / or csv files for storage in a database. </li></ul></ul>
+<h2>Optimisation and parameters:</h2>
+
+<li>A number of models were run with different combinations of hyperparameters. For the purposes of this project the hyperparameters chosen were the number of nodes per layer, the number of layers, the number of epochs and different combinations of three activation functions: sigmoid, reLU and tanh. Given this is a binary classification problem, the activation function applied to the output layer remained sigmoid.</li> 
+<li>Included here are the results of <b>two</b> of these attempts.</li>
+<li>Finally, keras_tuner was used in order to see whether it was possible to achieve a better result closer or greater than 75%. The auto-tune method represents a “brute “force” method of testing each combination within the range of parameters set. It is expensive in terms of tie, so the range of parameters tested were constrained to the ranges tested in the trial and error attempts, with a maximum of 30 epochs.</li>
+<p><b>Note:</b> the results are summarised using the following conventions – the number of nodes are written per layer with a “/” separating the layers; similarly the activation functions used per layer are also seperated by a “/”. The first and last layers refer to the input and output layers respectively.</li></ul>
+<b>Model 1</b><ul>
+<li>Layers 4</li>
+<li>Nodes: 6 / 6 / 8 / 1</li>
+<li>Activation function: relu/relu/ tanh/sigmoid</li>
+<li>Epochs: 100</li></ul>
+
+<img width="238" alt="image" src="https://github.com/andrew-fellowes/project-four-testing-ovarian-cancer/assets/124494379/6456b958-071b-4601-9123-752c5a9309ff"><p>
+
+
+<img width="112" alt="image" src="https://github.com/andrew-fellowes/project-four-testing-ovarian-cancer/assets/124494379/04e042e0-b2aa-457a-8532-1fb23baff896">
+
+<b>Model 2</b><ul>
+<li>Layers 3</li>
+<li>Nodes: 6 / 8 / 1</li>
+<li>Activation function: relu/tanh/sigmoid</li>
+<li>Epochs: 100</li></ul>
+
+<img width="245" alt="image" src="https://github.com/andrew-fellowes/project-four-testing-ovarian-cancer/assets/124494379/c048a16f-8fe0-4e08-b0c1-7545fc7a5638"><p>
+
+<img width="253" alt="image" src="https://github.com/andrew-fellowes/project-four-testing-ovarian-cancer/assets/124494379/496a97d7-8549-4678-9565-8ec7cd91382b">
+
+<b>Summary of results</b>
+The first model, using 4 layers and 100 epochs, showed the most accurate results. It has an accuracy score of 86% and a loss score of 37% compared to the second model with accuracy of 71% and loss of 59%. Although this appears promising the number of records forming the training and test set (summing to 139 in total) cast doubts on the efficacy of these results, with the very real likliehood that hgih results were obtained because the model was overfitted, having learnt the training data.
+
+<p><b>Keras Tuner</b></p>
+
+<p>Given our concerns about the reliability of the model, we undertook further testing using the Keras auto-tuner.</p>
+<p>The tuner ran tests on the model both with and without PCA.</p>
+<p>Without the PCA</p>
+
+<img width="101" alt="image" src="https://github.com/andrew-fellowes/project-four-testing-ovarian-cancer/assets/124494379/37a896db-7e63-43d4-a2fa-eb81fb3c8abe"><p>
+
+
+<img width="244" alt="image" src="https://github.com/andrew-fellowes/project-four-testing-ovarian-cancer/assets/124494379/c12aa0d7-5811-4125-be60-35599812e406">
+
+<li>This model had 3 layers and used tanh for the activation function. It proved to have a high accuracy rate - 85%, but the loss rate was 58% casting doubts on the reliability of this model</li>
+
+<p>With the PCA</p>
+
+<img width="238" alt="image" src="https://github.com/andrew-fellowes/project-four-testing-ovarian-cancer/assets/124494379/b4960924-6f4f-4a83-aeff-a0eaf0e25aa8"></p>
+
+<li>Although this model had a simlar accuracy of 85.7%, its loss was even higher at 61%. A loss score of this magnitude again suggests that the model is unreliable</li>
+
+<p>Findings on Neural Netowrk</p>
+
+<p>The Neural Network model seemd unstable. Manual optimisation led to what seemed like a reasonable resilt, with low loss and hgih accuracy, but this is contradicted byt eh results of the hyperperameter auto tuner, which had high accuracy but overly high loss. This is indicative of the fact that the sample size of the data set was far too small to make this an effective model. Additionally, the indcidence of disagreements between the SOPHiA model and the Myriad model is very small, at approximately 7% of the sample size, meaning that the training data is also unbalanced, with a very large amount of true positives and negatives, but only a small number of false positives and negatives. This led to the conclusion that the small dataset probably led to overfitting and a model that would not adapt well to testing unseen data.</p>
+
+<p>As a result a second model was employed: A Random Forest Model.</p>
+
+<h2>Random Forest</h2>
+[To Be Completed]
+
+<p><h2>Further steps - re modelling</h2></p><ul>
+
+<li>A larger data set is required; however, sufficient test numbers (with a suitable score from myriad) are hard to achieve. The development of the SOPHiA model had to rely on methods to produce artificial data  owing to the difficulty of providing sufficient examples of genetic instability, especially where mutations have occurred in the BRCA 1 and 2 genes. This casts some doubt on whether sufficient data can be easily gathered to provide an adequate test set</li>
+<li>Methods of data augmentation are therefore likely to be required - to create synthetic data to provide greater inputs to the model.</li>
+<li>Additionally, further methods are also required:<ul>
+  <li>Use methods to balance the training data with examples of where the Myriad and SOPHiA data disagree - such as putting a greater weighting on these results or oversampling to address teh imbalance</li>
+  <li>Tune the batch size used during training. Smaller batch sizes may introduce more randomness and noise during updates, potentially leading to better generalization.</li>
+  <li>Experiment further with ensemble methods, such as combining the predictions of multiple neural network models or using other machine learning algorithms, like Random Forest or Gradient Boosting, to create a more powerful ensemble model.</li>
+  <li>Use K-fold cross-validation to get a more reliable estimate of the model's performance and avoid overfitting to a specific train-test split.</li>
+  <li>Implement early stopping based on the model's performance on the validation set to prevent overfitting and save computation time.</li></li>
+<li>Experiment with different activation functions for the hidden layers trying others like Leaky ReLU, ELU, or SELU.</li>
+<li>Implement regularization techniques like L1 and L2 regularization to prevent overfitting. These techniques add penalty terms to the loss function based on the magnitude of weights, encouraging the model to prefer simpler solutions.</li>
+<li>Adjust the learning rate of the optimizer to control the step size during gradient updates. A smaller learning rate can make the training process more stable, but it might require more epochs for convergence.</li>
+<li>Experiment with different optimizers like RMSprop, Adamax, or Nadam to see if they lead to improved convergence and generalization.</li>
+<li>Undertake further feature engineering - for instance Principle Component Analysis will remove features that do not provide much information, simplifying the data set, removing noise and improving the model's efficiency. </li></ul>ul>
+
+<h2>Data Base</h2>
+
+<li>In order to record results, the cleaned data and other outputs of the models, a database was set up using MongoDB.</li>
+
+<li>It was decided to use a non-SQL database on the grounds that it offered more flexibility to deal with outputs in different file formats, and it is not so strucutrally rigid, allowing for a series of collections with different strucutures, within the same database without the formal requirment of a schema. This allowed us more flexibility in exprimenting with outputs and trialing different formats</li>
+
+<li> We did not deploy a database accessible individually by each member of the team - for the practical purposes of this project it was not possible to set up a hosted cloud database, so instead we used databases stored locally on our machines, but replicable given the same files and use of the same code creating a MongoDB instance</li>
+
+<li>A seried of python scripts were written in order to prodice databases that could be reproduced locally</li>li>
+<li>These scripts have been designed to input from csv or JSON files, and to allow the user to select the particular file they wish to input, given a large number of files are stored within the directories</li>
+<li>Each file was date and time stamped within the file name. The code parsed out the date and time stamp (using regx), recording it within the date field of the individual collections.</li>
+<li>Additionally the csv and JSON files needed to be put into a structure allowing for easy querying. this was particularly the case in entering the epoch records created  during the model testing. This was done by iterating though the files and adding the epochs in a nested field for each time a model was run</li>
+<li>A series of four collections were put together within the sofia_test_model database</li><ul>
+  <li>confusion_matrix</li>
+  <li>test_result</li>
+  <li>metrics</li>
+  <li>processed data</li>
+</ul>
+
+<li>Owing to the project time and the number of changes to models, the actual database does not contain recors of all model runs - in particular an adidtional code would have been required to write a collection containing the results of the keras_tuner models, and the parameters for each test model proved problematic to extract as other than a single string</li>
+<li>Further development is needed on the database to ensure that it is capable of storing all variations of the models tested, as well as the results of the Random Forest model.</li>
